@@ -59,7 +59,7 @@ class HomePageCategories extends StatelessWidget {
                   Icons.airline_seat_individual_suite_rounded,
                   color: Colors.white,
                 ),
-                name: "Bed"),
+                name: "sleep"),
             selected: false,
           ),
           SizedBox(width: 20),
