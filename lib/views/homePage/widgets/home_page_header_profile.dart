@@ -27,7 +27,7 @@ class HomePageHeaderProfile extends StatelessWidget {
                 ),
               ),
               Text(
-                "ABDELKARIM CHEDMI".toUpperCase(),
+                "JHON DOE".toUpperCase(),
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 15,

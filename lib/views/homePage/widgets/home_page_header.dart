@@ -17,7 +17,7 @@ class HomePageHeader extends StatelessWidget {
         Container(
           height: 120,
           decoration: BoxDecoration(
-            gradient: Palette.gradientsss,
+            gradient: Palette.purpuleGradient,
             borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(30),
                 bottomRight: Radius.circular(30)),
