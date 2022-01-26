@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:helpapp/Config/config.dart';
-import 'package:helpapp/views/homePage/widgets/home_page_header_search.dart';
-import 'package:helpapp/views/homePage/widgets/home_page_header_profile.dart';
+import 'package:helpapp/config/config.dart';
+import 'package:helpapp/views/homePage/widgets/widgets.dart';
 
 class HomePageHeader extends StatelessWidget {
   const HomePageHeader({

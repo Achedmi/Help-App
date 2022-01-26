@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:helpapp/Config/config.dart';
+import 'package:helpapp/config/config.dart';
 
 class HomePageHeaderSearch extends StatelessWidget {
   const HomePageHeaderSearch({

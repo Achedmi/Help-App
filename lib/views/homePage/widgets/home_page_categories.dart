@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:helpapp/Config/constants.dart';
+import 'package:helpapp/config/constants.dart';
 import 'package:helpapp/modules/modules.dart';
 
 class HomePageCategories extends StatelessWidget {
