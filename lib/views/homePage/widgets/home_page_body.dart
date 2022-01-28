@@ -9,7 +9,7 @@ class HomePageBody extends StatelessWidget {
     return Column(
       children: const [
         HomePageBodyBalence(),
-        HomePageCategories(),
+        HomePageBodyCategories(),
       ],
     );
   }

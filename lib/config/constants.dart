@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:helpapp/modules/categorie.dart';
 
 class Palette {
   static const lightPurpule = Color(0xFFccbdfd);
@@ -34,3 +36,54 @@ Map<String, dynamic> user = {
   "picture": "picture",
   "balence": 1358.2
 };
+
+List<Categorie> constCategories = [
+  Categorie(
+      name: "All",
+      icon: Icon(
+        Icons.category,
+        color: Colors.white,
+      ),
+      id: 1,
+      selected: true),
+  Categorie(
+      name: "Food",
+      icon: Icon(
+        Icons.food_bank,
+        color: Colors.white,
+      ),
+      id: 2,
+      selected: false),
+  Categorie(
+      name: "Buisness",
+      icon: Icon(
+        Icons.add_business,
+        color: Colors.white,
+      ),
+      id: 3,
+      selected: false),
+  Categorie(
+      name: "Coldness",
+      icon: Icon(
+        Icons.ac_unit,
+        color: Colors.white,
+      ),
+      id: 4,
+      selected: false),
+  Categorie(
+      name: "Bed",
+      icon: Icon(
+        Icons.airline_seat_individual_suite,
+        color: Colors.white,
+      ),
+      id: 5,
+      selected: false),
+  Categorie(
+      name: "Oder",
+      icon: Icon(
+        Icons.last_page_rounded,
+        color: Colors.white,
+      ),
+      id: 6,
+      selected: false),
+];

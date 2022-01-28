@@ -61,7 +61,6 @@ class HomePageBodyBalence extends StatelessWidget {
                       Center(
                         child: Container(
                           height: 35,
-                          // width: 10,
                           decoration: BoxDecoration(
                             color: Colors.black,
                             borderRadius: Palette.meduimRaduis,
