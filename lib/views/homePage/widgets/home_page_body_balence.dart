@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:helpapp/config/constants.dart';
+import 'package:helpapp/logic/cubit/user_cubit.dart';
 
 class HomePageBodyBalence extends StatelessWidget {
   const HomePageBodyBalence({
@@ -40,13 +42,20 @@ class HomePageBodyBalence extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 10),
-                      Text(
-                        " \$1293.33",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 25,
-                        ),
+                      BlocBuilder<UserCubit, UserState>(
+                        builder: (context, state) {
+                          if (state is UserFetchSucces) {
+                            return Text(
+                              "\$${state.user.balence.toString()}",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 25,
+                              ),
+                            );
+                          }
+                          return CircularProgressIndicator();
+                        },
                       ),
                       SizedBox(height: 10),
                       Center(

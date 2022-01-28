@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:helpapp/logic/cubit/user_cubit.dart';
 
 class HomePageHeaderProfile extends StatelessWidget {
   const HomePageHeaderProfile({
@@ -26,13 +28,19 @@ class HomePageHeaderProfile extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Text(
-                "JHON DOE".toUpperCase(),
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                  // fontWeight: FontWeight.,
-                ),
+              BlocBuilder<UserCubit, UserState>(
+                builder: (context, state) {
+                  if (state is UserFetchSucces) {
+                    return Text(
+                      state.user.name,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                      ),
+                    );
+                  }
+                  return CircularProgressIndicator();
+                },
               ),
             ],
           )

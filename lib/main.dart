@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
-import 'views/views.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:helpapp/logic/cubit/user_cubit.dart';
+import 'package:helpapp/views/views.dart';
 
 void main() {
-  runApp(const MaterialApp(
-    home: HomePage(),
-    debugShowCheckedModeBanner: false,
+  runApp(MultiBlocProvider(
+    providers: [
+      BlocProvider(
+        create: (context) => UserCubit(),
+      ),
+    ],
+    child: MaterialApp(
+      home: HomePage(),
+      debugShowCheckedModeBanner: false,
+    ),
   ));
 }

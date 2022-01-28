@@ -28,3 +28,9 @@ class Palette {
     Radius.circular(20),
   );
 }
+
+Map<String, dynamic> user = {
+  "name": "John Doe",
+  "picture": "picture",
+  "balence": 1358.2
+};
