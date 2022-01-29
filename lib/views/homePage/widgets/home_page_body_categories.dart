@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:helpapp/config/constants.dart';
 import 'package:helpapp/logic/cubit/categorie_cubit.dart';
-import 'package:helpapp/modules/modules.dart';
 import 'package:helpapp/views/homePage/widgets/home_page_categorie.dart';
 
 class HomePageBodyCategories extends StatelessWidget {

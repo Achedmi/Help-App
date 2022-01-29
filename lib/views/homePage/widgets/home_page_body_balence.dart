@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:helpapp/config/constants.dart';
 import 'package:helpapp/logic/cubit/user_cubit.dart';
+import 'package:sizer/sizer.dart';
 
 class HomePageBodyBalence extends StatelessWidget {
   const HomePageBodyBalence({
@@ -50,7 +51,7 @@ class HomePageBodyBalence extends StatelessWidget {
                               style: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,
-                                fontSize: 25,
+                                fontSize: 19.0.sp,
                               ),
                             );
                           }

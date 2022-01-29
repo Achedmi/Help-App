@@ -6,6 +6,6 @@ abstract class CategorieState {}
 class CategorieInitial extends CategorieState {}
 
 class CategorieFechSucces extends CategorieState {
-  List<Categorie> categories;
+  final List<Categorie> categories;
   CategorieFechSucces({required this.categories});
 }
