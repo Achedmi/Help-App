@@ -1,6 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:helpapp/config/config.dart';
+import 'package:sizer/sizer.dart';
 
 class HomePageHeaderSearch extends StatelessWidget {
   const HomePageHeaderSearch({
@@ -8,7 +9,6 @@ class HomePageHeaderSearch extends StatelessWidget {
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Positioned(
       bottom: -20,
       child: FadeInDown(
@@ -21,7 +21,7 @@ class HomePageHeaderSearch extends StatelessWidget {
             ),
             boxShadow: Palette.bottomShadow,
           ),
-          width: size.width * 0.8,
+          width: 80.0.w,
           child: Row(
             children: [
               Expanded(

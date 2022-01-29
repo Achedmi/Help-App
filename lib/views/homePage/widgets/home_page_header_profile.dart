@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:helpapp/logic/cubit/user_cubit.dart';
+import 'package:sizer/sizer.dart';
 
 class HomePageHeaderProfile extends StatelessWidget {
   const HomePageHeaderProfile({
@@ -24,7 +25,7 @@ class HomePageHeaderProfile extends StatelessWidget {
                 "Good Morning !",
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 20,
+                  fontSize: 9.5.sp,
                   fontWeight: FontWeight.bold,
                 ),
               ),
