@@ -1,9 +1,3 @@
-# Help App
-
-Created: February 1, 2022 4:59 PM
-Last Updated: January 20, 2022 7:11 PM
-Status: Needs Update ⚠️
-
 # App Idea 💡:
 
 ### The idea of this app is to make donations more easier and can be done by anyone anytime and anywhere and specially for the right charities :
