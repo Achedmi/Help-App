@@ -1,7 +1,7 @@
 # Help App
 
 Created: February 1, 2022 4:59 PM
-Last Updated: January 20, 2022 7:11 PM
+Last Updated: February 1, 2022 7:11 PM
 Status: Needs Update ⚠️
 
 # App Idea 💡:
@@ -68,12 +68,12 @@ Those to packages used to make a better responsive UI for multiple devices
 
 ![Screenshot_1643736275.png](Help%20App%209f2d295b4dc74b74a37bb4a469a3abf0/Screenshot_1643736275.png)
 
-any img used in the app just been picked up randomlly !
+Any img used in the app just been picked up randomly !
 
-# Learning prosses:
+# Learning process:
 
-- State Managment
-- Files and Widgets Structring
+- State Management
+- Files and Widgets Structuring
 - bit of Animation
 - data manipulation
 - CI / CD
@@ -89,5 +89,5 @@ Tools • Dart 2.17.0 (build 2.17.0-51.0.dev) • DevTools 2.9.2
 
 # ❗❗❗
 
-- This app is just for learning purposes !! so if you wanna push the app or the idea feel free about it, don’t worry i won’t sude you 😂
+- This app is just for learning purposes !! so if you wanna push the app or the idea feel free about it, don’t worry i won’t sue you 😂
 - if you saw any dump line (or lines) in the app, don’t worry about it’s just me being dump, feel free to let me know what i am being dump at, i’ll be more than welcome 😊, i’m just learning 🤷‍♂️
