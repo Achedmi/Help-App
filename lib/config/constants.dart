@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:helpapp/modules/categorie.dart';
+import 'package:helpapp/modules/charity.dart';
 
 class Palette {
   static const lightPurpule = Color(0xFFccbdfd);
@@ -37,52 +38,32 @@ Map<String, dynamic> user = {
 };
 
 List<Categorie> constCategories = [
-  Categorie(
-      name: "All",
-      icon: Icon(
-        Icons.category,
-        color: Colors.white,
-      ),
-      id: 1,
-      selected: true),
-  Categorie(
-      name: "Food",
-      icon: Icon(
-        Icons.food_bank,
-        color: Colors.white,
-      ),
-      id: 2,
-      selected: false),
-  Categorie(
-      name: "Buisness",
-      icon: Icon(
-        Icons.add_business,
-        color: Colors.white,
-      ),
-      id: 3,
-      selected: false),
-  Categorie(
-      name: "Coldness",
-      icon: Icon(
-        Icons.ac_unit,
-        color: Colors.white,
-      ),
-      id: 4,
-      selected: false),
-  Categorie(
-      name: "Bed",
-      icon: Icon(
-        Icons.airline_seat_individual_suite,
-        color: Colors.white,
-      ),
-      id: 5,
-      selected: false),
-  Categorie(
-      name: "Oder",
-      icon: Icon(
-        Icons.last_page_rounded,
-        color: Colors.white,
-      ),
-      id: 6,
-      selected: false),
+  Categorie(name: "All", id: 1),
+  Categorie(name: "Food", id: 2),
+  Categorie(name: "Buisness", id: 3),
+  Categorie(name: "Coldness", id: 4),
+  Categorie(name: "Bed", id: 5),
+  Categorie(name: "Annimals", id: 6),
+  Categorie(name: "Oder", id: 7),
+];
+
+List<Charity> constCharities = [
+  Charity(
+    id: 1,
+    name: "Birds charity",
+    pic:
+        "https://www.pngkit.com/png/full/78-780463_animals-clipart-png-cartoon-animals-png-cute-animal.png",
+    categorie: constCategories[5],
+    description:
+        "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est",
+  ),
+  Charity(
+    id: 2,
+    name: "Make a wish",
+    pic:
+        "https://www.pngkey.com/png/full/199-1997192_classes-for-all-ages-african-american-boy-playing.png",
+    categorie: constCategories[1],
+    description:
+        "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est",
+  ),
 ];

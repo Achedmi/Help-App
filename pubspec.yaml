@@ -16,6 +16,7 @@ dependencies:
   animate_do: ^2.1.0
   device_preview: ^1.0.0
   sizer: ^2.0.15
+  cached_network_image: ^3.2.0
 
 dev_dependencies:
   flutter_test:

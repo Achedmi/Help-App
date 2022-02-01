@@ -6,8 +6,14 @@ import 'package:helpapp/modules/modules.dart';
 
 class HomePageCategorie extends StatelessWidget {
   final Categorie categorie;
+  final bool isSelected;
+  final Icon icon;
 
-  const HomePageCategorie({Key? key, required this.categorie})
+  const HomePageCategorie(
+      {Key? key,
+      required this.categorie,
+      required this.isSelected,
+      required this.icon})
       : super(key: key);
 
   @override
@@ -22,12 +28,10 @@ class HomePageCategorie extends StatelessWidget {
             width: 60,
             height: 60,
             decoration: BoxDecoration(
-              color: categorie.selected
-                  ? Palette.darkPurpule
-                  : Palette.lightPurpule,
+              color: isSelected ? Palette.darkPurpule : Palette.lightPurpule,
               borderRadius: Palette.meduimRaduis,
             ),
-            child: Center(child: categorie.icon),
+            child: Center(child: icon),
           ),
         ),
         SizedBox(height: 10),
@@ -36,7 +40,7 @@ class HomePageCategorie extends StatelessWidget {
           style: TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.bold,
-            color: categorie.selected ? Colors.black : Colors.grey,
+            color: isSelected ? Colors.black : Colors.grey,
           ),
         )
       ],

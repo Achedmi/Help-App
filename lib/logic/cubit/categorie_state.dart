@@ -3,9 +3,11 @@ part of 'categorie_cubit.dart';
 @immutable
 abstract class CategorieState {}
 
-class CategorieInitial extends CategorieState {}
+class CategorieFetchLoading extends CategorieState {}
 
 class CategorieFechSucces extends CategorieState {
   final List<Categorie> categories;
-  CategorieFechSucces({required this.categories});
+  final Categorie selectedCategorie;
+  CategorieFechSucces(
+      {required this.categories, required this.selectedCategorie});
 }

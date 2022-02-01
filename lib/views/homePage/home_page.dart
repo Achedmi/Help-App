@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Palette.darkPurpule,
         elevation: 0,
+        title: Text("Help App"),
       ),
       body: SingleChildScrollView(
         child: Column(

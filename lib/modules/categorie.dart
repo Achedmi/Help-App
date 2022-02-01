@@ -1,16 +1,53 @@
-import 'package:flutter/material.dart';
+import 'dart:convert';
 
 class Categorie {
-  final int _id;
-  final String _name;
-  final Icon _icon;
-  bool selected = false;
+  final int id;
+  final String name;
 
-  get name => _name;
-  get icon => _icon;
-  get id => _id;
-  Categorie({required name, required icon, required id, required this.selected})
-      : _name = name,
-        _icon = icon,
-        _id = id;
+  Categorie({
+    required this.id,
+    required this.name,
+  });
+
+  Categorie copyWith({
+    int? id,
+    String? name,
+  }) {
+    return Categorie(
+      id: id ?? this.id,
+      name: name ?? this.name,
+    );
+  }
+
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'name': name,
+    };
+  }
+
+  factory Categorie.fromMap(Map<String, dynamic> map) {
+    return Categorie(
+      id: map['id']?.toInt() ?? 0,
+      name: map['name'] ?? '',
+    );
+  }
+
+  String toJson() => json.encode(toMap());
+
+  factory Categorie.fromJson(String source) =>
+      Categorie.fromMap(json.decode(source));
+
+  @override
+  String toString() => 'Categorie(id: $id, name: $name)';
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is Categorie && other.id == id && other.name == name;
+  }
+
+  @override
+  int get hashCode => id.hashCode ^ name.hashCode;
 }

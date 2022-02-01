@@ -20,6 +20,11 @@ class HomePageBodyCategories extends StatelessWidget {
                 for (int i = 0; i < state.categories.length; i++) ...[
                   HomePageCategorie(
                     categorie: state.categories[i],
+                    isSelected: state.selectedCategorie == state.categories[i],
+                    icon: Icon(
+                      Icons.fastfood_outlined,
+                      color: Colors.white,
+                    ),
                   ),
                   if (i != state.categories.length - 1)
                     SizedBox(
