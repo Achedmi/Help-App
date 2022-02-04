@@ -25,8 +25,8 @@ class HomePageCategorie extends StatelessWidget {
             BlocProvider.of<CategorieCubit>(context).select(categorie);
           },
           child: Container(
-            width: 60,
-            height: 60,
+            width: 55,
+            height: 55,
             decoration: BoxDecoration(
               color: isSelected ? Palette.darkPurpule : Palette.lightPurpule,
               borderRadius: Palette.meduimRaduis,
@@ -38,7 +38,7 @@ class HomePageCategorie extends StatelessWidget {
         Text(
           categorie.name.toString(),
           style: TextStyle(
-            fontSize: 14,
+            fontSize: 11,
             fontWeight: FontWeight.bold,
             color: isSelected ? Colors.black : Colors.grey,
           ),
