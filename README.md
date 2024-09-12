@@ -1,60 +1,58 @@
 # App Idea 💡:
 
-### The idea of this app is to make donations more easier and can be done by anyone anytime and anywhere and specially for the right charities :
+### The goal of this app is to make donating easier, accessible to anyone, anytime, and anywhere, with a focus on supporting the right charities.
 
-That could be done just by searching for a charity name on the search bar, or searching on Categories, or choosing the random Feature if you want to donate randomly to a random charity.
+You can donate by simply searching for a charity name using the search bar, browsing through categories, or using the **Random Feature** to donate to a randomly selected charity.
 
-To be able to donate to any charity you Should have already got some wallet’s balence 💵.
+To make a donation, you need to ensure your wallet has sufficient balance 💵.
 
-after selecting your preferred charity you can see it’s achievements as well as people reviews and ratings, if you are satisfied, click donate and insert the amount of the donation with a little support message and you can chose if you want to make you donation public (display your name ...) or unknown, then send .🎉 congrats you just help someone 🎉.
+After selecting your preferred charity, you can view its achievements, along with reviews and ratings from other donors. If you're satisfied, click **Donate**, specify the amount you'd like to give, and include a support message. You can also choose to make your donation public (showing your name) or anonymous. 🎉 Congratulations, you’ve just helped someone! 🎉
 
-at the end of the month or the year (or whatever it take the charity to achieve an achievement) you will receive an email or notification about the achievement of charity that you have donated to, and what your money has changed 😇 (that will be possible just if you make a public donation)
+At the end of the month, year, or when the charity reaches a milestone, you will receive an email or notification detailing the impact of your donation and the charity’s achievements 😇 (This will only be available if you choose to make your donation public).
 
-**NOT ANY CHARITY COULD BE IN THE APP !** the charities that will be displayed on the app will be certified and trusted by the App manager or someone responsible for this position to make sure that every donation went to the right place
+**Important:** Only verified and certified charities will be featured in the app. A designated app manager will ensure that all donations are directed to legitimate causes.
 
 # To Do ✅:
 
 - [ ] Login
-- [x] **Home page**
+- [x] **Home Page**
 - [ ] Charity Page
 - [ ] Wallet Page
 - [ ] Profile Page
-- [ ] Donnate Page
-- [ ] Historie Page
-
-...
+- [ ] Donate Page
+- [ ] History Page
 
 # Technologies ⚙:
 
-### flutter_bloc :
+### flutter_bloc:
 
-This is my first time working with this state management package, i found it hard at first but i start to used to it “speaking from a provided package user”, (i used just the cubits for now)
+This is my first time working with this state management package. It was challenging at first, but I'm getting the hang of it as a new "provider package" user (so far, I've only used Cubits).
 
-**link to the package** 🔗:
+**Link to the package** 🔗:
 
 [flutter_bloc | Flutter Package](https://pub.dev/packages/flutter_bloc)
 
-### animate_do :
+### animate_do:
 
-I used this package to make some fade in animations
+I used this package to create some fade-in animations.
 
-**link to the package** 🔗:
+**Link to the package** 🔗:
 
 [animate_do | Flutter Package](https://pub.dev/packages/animate_do)
 
-### device_preview / sizer :
+### device_preview / sizer:
 
-Those to packages used to make a better responsive UI for multiple devices
+These two packages are used to improve the app's responsiveness across different devices.
 
-**device_preview link** :
+**device_preview link**:
 
 [device_preview | Flutter Package](https://pub.dev/packages/device_preview)
 
-**sizer link** :
+**sizer link**:
 
 [sizer | Flutter Package](https://pub.dev/packages/sizer)
 
-# Pages :
+# Pages:
 
 ### Home Page:
 
@@ -62,16 +60,16 @@ Those to packages used to make a better responsive UI for multiple devices
 
 ![Screenshot_1643736275.png](Help%20App%209f2d295b4dc74b74a37bb4a469a3abf0/Screenshot_1643736275.png)
 
-Any img used in the app just been picked up randomly !
+*All images used in the app were randomly selected.*
 
-# Learning process:
+# Learning Process:
 
 - State Management
-- Files and Widgets Structuring
-- bit of Animation
-- data manipulation
-- CI / CD
-- Testing (not yet 😅)
+- File and Widget Structuring
+- Basic Animation
+- Data Manipulation
+- CI/CD
+- Testing (coming soon 😅)
 
 and more...
 
@@ -83,5 +81,5 @@ Tools • Dart 2.17.0 (build 2.17.0-51.0.dev) • DevTools 2.9.2
 
 # ❗❗❗
 
-- This app is just for learning purposes !! so if you wanna push the app or the idea feel free about it, don’t worry i won’t sue you 😂
-- if you saw any dump line (or lines) in the app, don’t worry about it’s just me being dump, feel free to let me know what i am being dump at, i’ll be more than welcome 😊, i’m just learning 🤷‍♂️
+- This app is for **learning purposes**! If you’d like to expand or use this app/idea, feel free to do so.
+- If you find any "dumb" code in the app, don’t worry, it’s just me being inexperienced. Feel free to point it out, and I’ll gladly appreciate the feedback 😊—I’m just learning 🤷‍♂️.
